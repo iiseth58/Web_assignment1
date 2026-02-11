@@ -1,0 +1,17 @@
+/* Optional: font smoothing tweaks (looks nicer on Windows) */
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* Reusable focus ring helper: add class "focus-ring" on interactive elements */
+.focus-ring:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+outline: none;
+  box-shadow: 0 0 0 2px rgba(234, 88, 12, 0.35); /* primary/35 */
+border-radius: 8px;
+}
+
+/* Hide default summary marker (we use our own arrow) */
+summary::-webkit-details-marker { display: none; }
+
+/* Utility: prevent image selection drag highlight */
+img { user-select: none; }
